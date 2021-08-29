@@ -1,0 +1,782 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DBSHOPDataSet2" targetNamespace="http://tempuri.org/DBSHOPDataSet2.xsd" xmlns:mstns="http://tempuri.org/DBSHOPDataSet2.xsd" xmlns="http://tempuri.org/DBSHOPDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBSHOPConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBSHOPConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TRBD.Properties.Settings.GlobalReference.Default.DBSHOPConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ListCategoryTableAdapter" GeneratorDataComponentClassName="ListCategoryTableAdapter" Name="ListCategory" UserDataComponentName="ListCategoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.ListCategory" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Код отдела], [Название отдела] FROM dbo.ListCategory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код отдела" DataSetColumn="Код отдела" />
+              <Mapping SourceColumn="Название отдела" DataSetColumn="Название отдела" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ListDriverTableAdapter" GeneratorDataComponentClassName="ListDriverTableAdapter" Name="ListDriver" UserDataComponentName="ListDriverTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.ListDriver" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Код водителя], [Имя водителя], [Отчество водителя], [Фамилия водителя], Статус FROM dbo.ListDriver</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код водителя" DataSetColumn="Код водителя" />
+              <Mapping SourceColumn="Имя водителя" DataSetColumn="Имя водителя" />
+              <Mapping SourceColumn="Отчество водителя" DataSetColumn="Отчество водителя" />
+              <Mapping SourceColumn="Фамилия водителя" DataSetColumn="Фамилия водителя" />
+              <Mapping SourceColumn="Статус" DataSetColumn="Статус" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ListDriverOpenTableAdapter" GeneratorDataComponentClassName="ListDriverOpenTableAdapter" Name="ListDriverOpen" UserDataComponentName="ListDriverOpenTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.ListDriverOpen" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Код водителя], [Имя водителя], [Отчество водителя], [Фамилия водителя] FROM dbo.ListDriverOpen</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код водителя" DataSetColumn="Код водителя" />
+              <Mapping SourceColumn="Имя водителя" DataSetColumn="Имя водителя" />
+              <Mapping SourceColumn="Отчество водителя" DataSetColumn="Отчество водителя" />
+              <Mapping SourceColumn="Фамилия водителя" DataSetColumn="Фамилия водителя" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LISTORDERTableAdapter" GeneratorDataComponentClassName="LISTORDERTableAdapter" Name="LISTORDER" UserDataComponentName="LISTORDERTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.LISTORDER" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Код заказа], [Код товара], [Имя заказчика], [Отчество заказчика], [Фамилия заказчика], [Адрес доставки], [код водителя], [Имя водителя], [Отчество водителя], [Фамилия водителя], [Статус заказа] FROM dbo.LISTORDER</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код заказа" DataSetColumn="Код заказа" />
+              <Mapping SourceColumn="Код товара" DataSetColumn="Код товара" />
+              <Mapping SourceColumn="Имя заказчика" DataSetColumn="Имя заказчика" />
+              <Mapping SourceColumn="Отчество заказчика" DataSetColumn="Отчество заказчика" />
+              <Mapping SourceColumn="Фамилия заказчика" DataSetColumn="Фамилия заказчика" />
+              <Mapping SourceColumn="Адрес доставки" DataSetColumn="Адрес доставки" />
+              <Mapping SourceColumn="код водителя" DataSetColumn="код водителя" />
+              <Mapping SourceColumn="Имя водителя" DataSetColumn="Имя водителя" />
+              <Mapping SourceColumn="Отчество водителя" DataSetColumn="Отчество водителя" />
+              <Mapping SourceColumn="Фамилия водителя" DataSetColumn="Фамилия водителя" />
+              <Mapping SourceColumn="Статус заказа" DataSetColumn="Статус заказа" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ListProductsTableAdapter" GeneratorDataComponentClassName="ListProductsTableAdapter" Name="ListProducts" UserDataComponentName="ListProductsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.ListProducts" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Код продукта], [Категория продукта], [Тип Продукта], Материал, Цвет, Цена FROM dbo.ListProducts</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код продукта" DataSetColumn="Код продукта" />
+              <Mapping SourceColumn="Категория продукта" DataSetColumn="Категория продукта" />
+              <Mapping SourceColumn="Тип Продукта" DataSetColumn="Тип Продукта" />
+              <Mapping SourceColumn="Материал" DataSetColumn="Материал" />
+              <Mapping SourceColumn="Цвет" DataSetColumn="Цвет" />
+              <Mapping SourceColumn="Цена" DataSetColumn="Цена" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LISTWORKERTableAdapter" GeneratorDataComponentClassName="LISTWORKERTableAdapter" Name="LISTWORKER" UserDataComponentName="LISTWORKERTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.LISTWORKER" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [код сотрудника], Имя, Отчество, Фамилия, [должность сотрудник], Зарплата, Логин, Пароль, Отдел FROM dbo.LISTWORKER</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="код сотрудника" DataSetColumn="код сотрудника" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Отчество" DataSetColumn="Отчество" />
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="должность сотрудник" DataSetColumn="должность сотрудник" />
+              <Mapping SourceColumn="Зарплата" DataSetColumn="Зарплата" />
+              <Mapping SourceColumn="Логин" DataSetColumn="Логин" />
+              <Mapping SourceColumn="Пароль" DataSetColumn="Пароль" />
+              <Mapping SourceColumn="Отдел" DataSetColumn="Отдел" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NumberOfItemsSoldTableAdapter" GeneratorDataComponentClassName="NumberOfItemsSoldTableAdapter" Name="NumberOfItemsSold" UserDataComponentName="NumberOfItemsSoldTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.NumberOfItemsSold" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [НОМЕР ПРОДУКТА], [ТИП МЕБЕЛИ], МАТЕРИАЛ, ЦВЕТ, ЦЕНА, [КОЛИЧЕСТВО ПРОДАННЫХ] FROM dbo.NumberOfItemsSold()</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="НОМЕР ПРОДУКТА" DataSetColumn="НОМЕР ПРОДУКТА" />
+              <Mapping SourceColumn="ТИП МЕБЕЛИ" DataSetColumn="ТИП МЕБЕЛИ" />
+              <Mapping SourceColumn="МАТЕРИАЛ" DataSetColumn="МАТЕРИАЛ" />
+              <Mapping SourceColumn="ЦВЕТ" DataSetColumn="ЦВЕТ" />
+              <Mapping SourceColumn="ЦЕНА" DataSetColumn="ЦЕНА" />
+              <Mapping SourceColumn="КОЛИЧЕСТВО ПРОДАННЫХ" DataSetColumn="КОЛИЧЕСТВО ПРОДАННЫХ" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductsOneCategoryTableAdapter" GeneratorDataComponentClassName="ProductsOneCategoryTableAdapter" Name="ProductsOneCategory" UserDataComponentName="ProductsOneCategoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.ProductsOneCategory" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [НОМЕР ПРОДУКТА], [ТИП МЕБЕЛИ], МАТЕРИАЛ, ЦВЕТ, ЦЕНА FROM dbo.ProductsOneCategory(@CategoryName)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="CategoryName" ColumnName="" DataSourceName="" DataTypeServer="nvarchar(100)" DbType="String" Direction="Input" ParameterName="@CategoryName" Precision="0" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="НОМЕР ПРОДУКТА" DataSetColumn="НОМЕР ПРОДУКТА" />
+              <Mapping SourceColumn="ТИП МЕБЕЛИ" DataSetColumn="ТИП МЕБЕЛИ" />
+              <Mapping SourceColumn="МАТЕРИАЛ" DataSetColumn="МАТЕРИАЛ" />
+              <Mapping SourceColumn="ЦВЕТ" DataSetColumn="ЦВЕТ" />
+              <Mapping SourceColumn="ЦЕНА" DataSetColumn="ЦЕНА" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.AddCategory" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddCategory" MethodsParameterType="CLR" Modifier="Public" Name="AddCategory" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="AddCategory">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.AddCategory</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.AddCustomer" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddCustomer" MethodsParameterType="CLR" Modifier="Public" Name="AddCustomer" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="AddCustomer">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.AddCustomer</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@MiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Address" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.AddDriver" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddDriver" MethodsParameterType="CLR" Modifier="Public" Name="AddDriver" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="AddDriver">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.AddDriver</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@MiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.AddOrder" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddOrder" MethodsParameterType="CLR" Modifier="Public" Name="AddOrder" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="AddOrder">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.AddOrder</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@MiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Address" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IDProduct" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.AddProduct" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddProduct" MethodsParameterType="CLR" Modifier="Public" Name="AddProduct" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="AddProduct">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.AddProduct</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@TypeProduct" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Color" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Material" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@Price" Precision="10" ProviderType="Decimal" Scale="2" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Categori" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.AddWorkerInProduction" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddWorkerInProduction" MethodsParameterType="CLR" Modifier="Public" Name="AddWorkerInProduction" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="AddWorkerInProduction">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.AddWorkerInProduction</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@MiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Category" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@Price" Precision="10" ProviderType="Decimal" Scale="2" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.AddWorkerOrAdmin" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddWorkerOrAdmin" MethodsParameterType="CLR" Modifier="Public" Name="AddWorkerOrAdmin" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="AddWorkerOrAdmin">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.AddWorkerOrAdmin</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@MiddleName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@Price" Precision="10" ProviderType="Decimal" Scale="2" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@TypeWorker" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Login" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Parol" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.DeleteCategory" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="DeleteCategory" MethodsParameterType="CLR" Modifier="Public" Name="DeleteCategory" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="DeleteCategory">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.DeleteCategory</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.DeleteDriver" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="DeleteDriver" MethodsParameterType="CLR" Modifier="Public" Name="DeleteDriver" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="DeleteDriver">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.DeleteDriver</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.DeleteProduct" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="DeleteProduct" MethodsParameterType="CLR" Modifier="Public" Name="DeleteProduct" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="DeleteProduct">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.DeleteProduct</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@id" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.DeleteWorkerInProduction" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="DeleteWorkerInProduction" MethodsParameterType="CLR" Modifier="Public" Name="DeleteWorkerInProduction" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="DeleteWorkerInProduction">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.DeleteWorkerInProduction</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.DeleteWorkerOrAdmin" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="DeleteWorkerOrAdmin" MethodsParameterType="CLR" Modifier="Public" Name="DeleteWorkerOrAdmin" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="DeleteWorkerOrAdmin">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.DeleteWorkerOrAdmin</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.NewPriceProduct" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="NewPriceProduct" MethodsParameterType="CLR" Modifier="Public" Name="NewPriceProduct" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="NewPriceProduct">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.NewPriceProduct</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@newPrice" Precision="10" ProviderType="Decimal" Scale="2" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.NewPriseWorker" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="NewPriseWorker" MethodsParameterType="CLR" Modifier="Public" Name="NewPriseWorker" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy13" UserSourceName="NewPriseWorker">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.NewPriseWorker</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="decimal" DbType="Decimal" Direction="Input" ParameterName="@newPrice" Precision="10" ProviderType="Decimal" Scale="2" Size="9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.OrderAreManufactured" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="OrderAreManufactured" MethodsParameterType="CLR" Modifier="Public" Name="OrderAreManufactured" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy14" UserSourceName="OrderAreManufactured">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.OrderAreManufactured</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.OrderDevileryBegin" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="OrderDevileryBegin" MethodsParameterType="CLR" Modifier="Public" Name="OrderDevileryBegin" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy15" UserSourceName="OrderDevileryBegin">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.OrderDevileryBegin</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdOrder" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdDriver" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.OrderDevileryEnd" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="OrderDevileryEnd" MethodsParameterType="CLR" Modifier="Public" Name="OrderDevileryEnd" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy16" UserSourceName="OrderDevileryEnd">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.OrderDevileryEnd</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdOrder" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.GetDostup" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="GetDostup" MethodsParameterType="CLR" Modifier="Public" Name="GetDostup" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy17" UserSourceName="GetDostup">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.GetDostup</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Login" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Parol" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.IncomeCompany" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="IncomeCompany" MethodsParameterType="CLR" Modifier="Public" Name="IncomeCompany" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy18" UserSourceName="IncomeCompany">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.IncomeCompany</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.NumberOfItemSold" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="NumberOfItemSold" MethodsParameterType="CLR" Modifier="Public" Name="NumberOfItemSold" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy19" UserSourceName="NumberOfItemSold">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.NumberOfItemSold</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdProduct" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.OrderCustomerStautus" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="OrderCustomerStautus" MethodsParameterType="CLR" Modifier="Public" Name="OrderCustomerStautus" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy20" UserSourceName="OrderCustomerStautus">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.OrderCustomerStautus</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdOrder" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DBSHOPConnectionString (Settings)" DbObjectName="DBSHOP.dbo.StringFormat" DbObjectType="Function" GenerateShortCommands="true" GeneratorSourceName="StringFormat" MethodsParameterType="CLR" Modifier="Public" Name="StringFormat" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy21" UserSourceName="StringFormat">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.StringFormat</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@str" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DBSHOPDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DBSHOPDataSet2" msprop:Generator_UserDSName="DBSHOPDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ListCategory" msprop:Generator_TableClassName="ListCategoryDataTable" msprop:Generator_TableVarName="tableListCategory" msprop:Generator_TablePropName="ListCategory" msprop:Generator_RowDeletingName="ListCategoryRowDeleting" msprop:Generator_RowChangingName="ListCategoryRowChanging" msprop:Generator_RowEvHandlerName="ListCategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="ListCategoryRowDeleted" msprop:Generator_UserTableName="ListCategory" msprop:Generator_RowChangedName="ListCategoryRowChanged" msprop:Generator_RowEvArgName="ListCategoryRowChangeEvent" msprop:Generator_RowClassName="ListCategoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_x0020_отдела" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnКод_отдела" msprop:Generator_ColumnPropNameInRow="Код_отдела" msprop:Generator_ColumnPropNameInTable="Код_отделаColumn" msprop:Generator_UserColumnName="Код отдела" type="xs:int" />
+              <xs:element name="Название_x0020_отдела" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnНазвание_отдела" msprop:Generator_ColumnPropNameInRow="Название_отдела" msprop:Generator_ColumnPropNameInTable="Название_отделаColumn" msprop:Generator_UserColumnName="Название отдела" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ListDriver" msprop:Generator_TableClassName="ListDriverDataTable" msprop:Generator_TableVarName="tableListDriver" msprop:Generator_TablePropName="ListDriver" msprop:Generator_RowDeletingName="ListDriverRowDeleting" msprop:Generator_RowChangingName="ListDriverRowChanging" msprop:Generator_RowEvHandlerName="ListDriverRowChangeEventHandler" msprop:Generator_RowDeletedName="ListDriverRowDeleted" msprop:Generator_UserTableName="ListDriver" msprop:Generator_RowChangedName="ListDriverRowChanged" msprop:Generator_RowEvArgName="ListDriverRowChangeEvent" msprop:Generator_RowClassName="ListDriverRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_x0020_водителя" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnКод_водителя" msprop:Generator_ColumnPropNameInRow="Код_водителя" msprop:Generator_ColumnPropNameInTable="Код_водителяColumn" msprop:Generator_UserColumnName="Код водителя" type="xs:int" />
+              <xs:element name="Имя_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnИмя_водителя" msprop:Generator_ColumnPropNameInRow="Имя_водителя" msprop:Generator_ColumnPropNameInTable="Имя_водителяColumn" msprop:Generator_UserColumnName="Имя водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnОтчество_водителя" msprop:Generator_ColumnPropNameInRow="Отчество_водителя" msprop:Generator_ColumnPropNameInTable="Отчество_водителяColumn" msprop:Generator_UserColumnName="Отчество водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Фамилия_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnФамилия_водителя" msprop:Generator_ColumnPropNameInRow="Фамилия_водителя" msprop:Generator_ColumnPropNameInTable="Фамилия_водителяColumn" msprop:Generator_UserColumnName="Фамилия водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Статус" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnСтатус" msprop:Generator_ColumnPropNameInRow="Статус" msprop:Generator_ColumnPropNameInTable="СтатусColumn" msprop:Generator_UserColumnName="Статус" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ListDriverOpen" msprop:Generator_TableClassName="ListDriverOpenDataTable" msprop:Generator_TableVarName="tableListDriverOpen" msprop:Generator_TablePropName="ListDriverOpen" msprop:Generator_RowDeletingName="ListDriverOpenRowDeleting" msprop:Generator_RowChangingName="ListDriverOpenRowChanging" msprop:Generator_RowEvHandlerName="ListDriverOpenRowChangeEventHandler" msprop:Generator_RowDeletedName="ListDriverOpenRowDeleted" msprop:Generator_UserTableName="ListDriverOpen" msprop:Generator_RowChangedName="ListDriverOpenRowChanged" msprop:Generator_RowEvArgName="ListDriverOpenRowChangeEvent" msprop:Generator_RowClassName="ListDriverOpenRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_x0020_водителя" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnКод_водителя" msprop:Generator_ColumnPropNameInRow="Код_водителя" msprop:Generator_ColumnPropNameInTable="Код_водителяColumn" msprop:Generator_UserColumnName="Код водителя" type="xs:int" />
+              <xs:element name="Имя_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnИмя_водителя" msprop:Generator_ColumnPropNameInRow="Имя_водителя" msprop:Generator_ColumnPropNameInTable="Имя_водителяColumn" msprop:Generator_UserColumnName="Имя водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnОтчество_водителя" msprop:Generator_ColumnPropNameInRow="Отчество_водителя" msprop:Generator_ColumnPropNameInTable="Отчество_водителяColumn" msprop:Generator_UserColumnName="Отчество водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Фамилия_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnФамилия_водителя" msprop:Generator_ColumnPropNameInRow="Фамилия_водителя" msprop:Generator_ColumnPropNameInTable="Фамилия_водителяColumn" msprop:Generator_UserColumnName="Фамилия водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LISTORDER" msprop:Generator_TableClassName="LISTORDERDataTable" msprop:Generator_TableVarName="tableLISTORDER" msprop:Generator_TablePropName="LISTORDER" msprop:Generator_RowDeletingName="LISTORDERRowDeleting" msprop:Generator_RowChangingName="LISTORDERRowChanging" msprop:Generator_RowEvHandlerName="LISTORDERRowChangeEventHandler" msprop:Generator_RowDeletedName="LISTORDERRowDeleted" msprop:Generator_UserTableName="LISTORDER" msprop:Generator_RowChangedName="LISTORDERRowChanged" msprop:Generator_RowEvArgName="LISTORDERRowChangeEvent" msprop:Generator_RowClassName="LISTORDERRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_x0020_заказа" msprop:Generator_ColumnVarNameInTable="columnКод_заказа" msprop:Generator_ColumnPropNameInRow="Код_заказа" msprop:Generator_ColumnPropNameInTable="Код_заказаColumn" msprop:Generator_UserColumnName="Код заказа" type="xs:int" />
+              <xs:element name="Код_x0020_товара" msprop:Generator_ColumnVarNameInTable="columnКод_товара" msprop:Generator_ColumnPropNameInRow="Код_товара" msprop:Generator_ColumnPropNameInTable="Код_товараColumn" msprop:Generator_UserColumnName="Код товара" type="xs:int" />
+              <xs:element name="Имя_x0020_заказчика" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnИмя_заказчика" msprop:Generator_ColumnPropNameInRow="Имя_заказчика" msprop:Generator_ColumnPropNameInTable="Имя_заказчикаColumn" msprop:Generator_UserColumnName="Имя заказчика" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество_x0020_заказчика" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnОтчество_заказчика" msprop:Generator_ColumnPropNameInRow="Отчество_заказчика" msprop:Generator_ColumnPropNameInTable="Отчество_заказчикаColumn" msprop:Generator_UserColumnName="Отчество заказчика" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Фамилия_x0020_заказчика" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnФамилия_заказчика" msprop:Generator_ColumnPropNameInRow="Фамилия_заказчика" msprop:Generator_ColumnPropNameInTable="Фамилия_заказчикаColumn" msprop:Generator_UserColumnName="Фамилия заказчика" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_x0020_доставки" msprop:Generator_ColumnVarNameInTable="columnАдрес_доставки" msprop:Generator_ColumnPropNameInRow="Адрес_доставки" msprop:Generator_ColumnPropNameInTable="Адрес_доставкиColumn" msprop:Generator_UserColumnName="Адрес доставки" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="код_x0020_водителя" msprop:Generator_ColumnVarNameInTable="columnкод_водителя" msprop:Generator_ColumnPropNameInRow="код_водителя" msprop:Generator_ColumnPropNameInTable="код_водителяColumn" msprop:Generator_UserColumnName="код водителя" type="xs:int" minOccurs="0" />
+              <xs:element name="Имя_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnИмя_водителя" msprop:Generator_ColumnPropNameInRow="Имя_водителя" msprop:Generator_ColumnPropNameInTable="Имя_водителяColumn" msprop:Generator_UserColumnName="Имя водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnОтчество_водителя" msprop:Generator_ColumnPropNameInRow="Отчество_водителя" msprop:Generator_ColumnPropNameInTable="Отчество_водителяColumn" msprop:Generator_UserColumnName="Отчество водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Фамилия_x0020_водителя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnФамилия_водителя" msprop:Generator_ColumnPropNameInRow="Фамилия_водителя" msprop:Generator_ColumnPropNameInTable="Фамилия_водителяColumn" msprop:Generator_UserColumnName="Фамилия водителя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Статус_x0020_заказа" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnСтатус_заказа" msprop:Generator_ColumnPropNameInRow="Статус_заказа" msprop:Generator_ColumnPropNameInTable="Статус_заказаColumn" msprop:Generator_UserColumnName="Статус заказа" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ListProducts" msprop:Generator_TableClassName="ListProductsDataTable" msprop:Generator_TableVarName="tableListProducts" msprop:Generator_TablePropName="ListProducts" msprop:Generator_RowDeletingName="ListProductsRowDeleting" msprop:Generator_RowChangingName="ListProductsRowChanging" msprop:Generator_RowEvHandlerName="ListProductsRowChangeEventHandler" msprop:Generator_RowDeletedName="ListProductsRowDeleted" msprop:Generator_UserTableName="ListProducts" msprop:Generator_RowChangedName="ListProductsRowChanged" msprop:Generator_RowEvArgName="ListProductsRowChangeEvent" msprop:Generator_RowClassName="ListProductsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_x0020_продукта" msprop:Generator_ColumnVarNameInTable="columnКод_продукта" msprop:Generator_ColumnPropNameInRow="Код_продукта" msprop:Generator_ColumnPropNameInTable="Код_продуктаColumn" msprop:Generator_UserColumnName="Код продукта" type="xs:int" />
+              <xs:element name="Категория_x0020_продукта" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnКатегория_продукта" msprop:Generator_ColumnPropNameInRow="Категория_продукта" msprop:Generator_ColumnPropNameInTable="Категория_продуктаColumn" msprop:Generator_UserColumnName="Категория продукта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тип_x0020_Продукта" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnТип_Продукта" msprop:Generator_ColumnPropNameInRow="Тип_Продукта" msprop:Generator_ColumnPropNameInTable="Тип_ПродуктаColumn" msprop:Generator_UserColumnName="Тип Продукта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Материал" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnМатериал" msprop:Generator_ColumnPropNameInRow="Материал" msprop:Generator_ColumnPropNameInTable="МатериалColumn" msprop:Generator_UserColumnName="Материал" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Цвет" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnЦвет" msprop:Generator_ColumnPropNameInRow="Цвет" msprop:Generator_ColumnPropNameInTable="ЦветColumn" msprop:Generator_UserColumnName="Цвет" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Цена" msprop:Generator_ColumnVarNameInTable="columnЦена" msprop:Generator_ColumnPropNameInRow="Цена" msprop:Generator_ColumnPropNameInTable="ЦенаColumn" msprop:Generator_UserColumnName="Цена" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LISTWORKER" msprop:Generator_TableClassName="LISTWORKERDataTable" msprop:Generator_TableVarName="tableLISTWORKER" msprop:Generator_TablePropName="LISTWORKER" msprop:Generator_RowDeletingName="LISTWORKERRowDeleting" msprop:Generator_RowChangingName="LISTWORKERRowChanging" msprop:Generator_RowEvHandlerName="LISTWORKERRowChangeEventHandler" msprop:Generator_RowDeletedName="LISTWORKERRowDeleted" msprop:Generator_UserTableName="LISTWORKER" msprop:Generator_RowChangedName="LISTWORKERRowChanged" msprop:Generator_RowEvArgName="LISTWORKERRowChangeEvent" msprop:Generator_RowClassName="LISTWORKERRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="код_x0020_сотрудника" msprop:Generator_ColumnVarNameInTable="columnкод_сотрудника" msprop:Generator_ColumnPropNameInRow="код_сотрудника" msprop:Generator_ColumnPropNameInTable="код_сотрудникаColumn" msprop:Generator_UserColumnName="код сотрудника" type="xs:int" />
+              <xs:element name="Имя" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_UserColumnName="Имя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnОтчество" msprop:Generator_ColumnPropNameInRow="Отчество" msprop:Generator_ColumnPropNameInTable="ОтчествоColumn" msprop:Generator_UserColumnName="Отчество" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Фамилия" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_UserColumnName="Фамилия" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="должность_x0020_сотрудник" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnдолжность_сотрудник" msprop:Generator_ColumnPropNameInRow="должность_сотрудник" msprop:Generator_ColumnPropNameInTable="должность_сотрудникColumn" msprop:Generator_UserColumnName="должность сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Зарплата" msprop:Generator_ColumnVarNameInTable="columnЗарплата" msprop:Generator_ColumnPropNameInRow="Зарплата" msprop:Generator_ColumnPropNameInTable="ЗарплатаColumn" msprop:Generator_UserColumnName="Зарплата" type="xs:decimal" />
+              <xs:element name="Логин" msprop:Generator_ColumnVarNameInTable="columnЛогин" msprop:Generator_ColumnPropNameInRow="Логин" msprop:Generator_ColumnPropNameInTable="ЛогинColumn" msprop:Generator_UserColumnName="Логин" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Пароль" msprop:Generator_ColumnVarNameInTable="columnПароль" msprop:Generator_ColumnPropNameInRow="Пароль" msprop:Generator_ColumnPropNameInTable="ПарольColumn" msprop:Generator_UserColumnName="Пароль" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отдел" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnОтдел" msprop:Generator_ColumnPropNameInRow="Отдел" msprop:Generator_ColumnPropNameInTable="ОтделColumn" msprop:Generator_UserColumnName="Отдел" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NumberOfItemsSold" msprop:Generator_TableClassName="NumberOfItemsSoldDataTable" msprop:Generator_TableVarName="tableNumberOfItemsSold" msprop:Generator_TablePropName="NumberOfItemsSold" msprop:Generator_RowDeletingName="NumberOfItemsSoldRowDeleting" msprop:Generator_RowChangingName="NumberOfItemsSoldRowChanging" msprop:Generator_RowEvHandlerName="NumberOfItemsSoldRowChangeEventHandler" msprop:Generator_RowDeletedName="NumberOfItemsSoldRowDeleted" msprop:Generator_UserTableName="NumberOfItemsSold" msprop:Generator_RowChangedName="NumberOfItemsSoldRowChanged" msprop:Generator_RowEvArgName="NumberOfItemsSoldRowChangeEvent" msprop:Generator_RowClassName="NumberOfItemsSoldRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="НОМЕР_x0020_ПРОДУКТА" msprop:Generator_ColumnVarNameInTable="columnНОМЕР_ПРОДУКТА" msprop:Generator_ColumnPropNameInRow="НОМЕР_ПРОДУКТА" msprop:Generator_ColumnPropNameInTable="НОМЕР_ПРОДУКТАColumn" msprop:Generator_UserColumnName="НОМЕР ПРОДУКТА" type="xs:int" />
+              <xs:element name="ТИП_x0020_МЕБЕЛИ" msprop:Generator_ColumnVarNameInTable="columnТИП_МЕБЕЛИ" msprop:Generator_ColumnPropNameInRow="ТИП_МЕБЕЛИ" msprop:Generator_ColumnPropNameInTable="ТИП_МЕБЕЛИColumn" msprop:Generator_UserColumnName="ТИП МЕБЕЛИ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="МАТЕРИАЛ" msprop:Generator_ColumnVarNameInTable="columnМАТЕРИАЛ" msprop:Generator_ColumnPropNameInRow="МАТЕРИАЛ" msprop:Generator_ColumnPropNameInTable="МАТЕРИАЛColumn" msprop:Generator_UserColumnName="МАТЕРИАЛ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ЦВЕТ" msprop:Generator_ColumnVarNameInTable="columnЦВЕТ" msprop:Generator_ColumnPropNameInRow="ЦВЕТ" msprop:Generator_ColumnPropNameInTable="ЦВЕТColumn" msprop:Generator_UserColumnName="ЦВЕТ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ЦЕНА" msprop:Generator_ColumnVarNameInTable="columnЦЕНА" msprop:Generator_ColumnPropNameInRow="ЦЕНА" msprop:Generator_ColumnPropNameInTable="ЦЕНАColumn" msprop:Generator_UserColumnName="ЦЕНА" type="xs:decimal" />
+              <xs:element name="КОЛИЧЕСТВО_x0020_ПРОДАННЫХ" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnКОЛИЧЕСТВО_ПРОДАННЫХ" msprop:Generator_ColumnPropNameInRow="КОЛИЧЕСТВО_ПРОДАННЫХ" msprop:Generator_ColumnPropNameInTable="КОЛИЧЕСТВО_ПРОДАННЫХColumn" msprop:Generator_UserColumnName="КОЛИЧЕСТВО ПРОДАННЫХ" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProductsOneCategory" msprop:Generator_TableClassName="ProductsOneCategoryDataTable" msprop:Generator_TableVarName="tableProductsOneCategory" msprop:Generator_TablePropName="ProductsOneCategory" msprop:Generator_RowDeletingName="ProductsOneCategoryRowDeleting" msprop:Generator_RowChangingName="ProductsOneCategoryRowChanging" msprop:Generator_RowEvHandlerName="ProductsOneCategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductsOneCategoryRowDeleted" msprop:Generator_UserTableName="ProductsOneCategory" msprop:Generator_RowChangedName="ProductsOneCategoryRowChanged" msprop:Generator_RowEvArgName="ProductsOneCategoryRowChangeEvent" msprop:Generator_RowClassName="ProductsOneCategoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="НОМЕР_x0020_ПРОДУКТА" msprop:Generator_ColumnVarNameInTable="columnНОМЕР_ПРОДУКТА" msprop:Generator_ColumnPropNameInRow="НОМЕР_ПРОДУКТА" msprop:Generator_ColumnPropNameInTable="НОМЕР_ПРОДУКТАColumn" msprop:Generator_UserColumnName="НОМЕР ПРОДУКТА" type="xs:int" />
+              <xs:element name="ТИП_x0020_МЕБЕЛИ" msprop:Generator_ColumnVarNameInTable="columnТИП_МЕБЕЛИ" msprop:Generator_ColumnPropNameInRow="ТИП_МЕБЕЛИ" msprop:Generator_ColumnPropNameInTable="ТИП_МЕБЕЛИColumn" msprop:Generator_UserColumnName="ТИП МЕБЕЛИ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="МАТЕРИАЛ" msprop:Generator_ColumnVarNameInTable="columnМАТЕРИАЛ" msprop:Generator_ColumnPropNameInRow="МАТЕРИАЛ" msprop:Generator_ColumnPropNameInTable="МАТЕРИАЛColumn" msprop:Generator_UserColumnName="МАТЕРИАЛ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ЦВЕТ" msprop:Generator_ColumnVarNameInTable="columnЦВЕТ" msprop:Generator_ColumnPropNameInRow="ЦВЕТ" msprop:Generator_ColumnPropNameInTable="ЦВЕТColumn" msprop:Generator_UserColumnName="ЦВЕТ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ЦЕНА" msprop:Generator_ColumnVarNameInTable="columnЦЕНА" msprop:Generator_ColumnPropNameInRow="ЦЕНА" msprop:Generator_ColumnPropNameInTable="ЦЕНАColumn" msprop:Generator_UserColumnName="ЦЕНА" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ListCategory" />
+      <xs:field xpath="mstns:Код_x0020_отдела" />
+    </xs:unique>
+    <xs:unique name="ListDriver_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ListDriver" />
+      <xs:field xpath="mstns:Код_x0020_водителя" />
+    </xs:unique>
+    <xs:unique name="ListDriverOpen_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ListDriverOpen" />
+      <xs:field xpath="mstns:Код_x0020_водителя" />
+    </xs:unique>
+    <xs:unique name="ListProducts_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ListProducts" />
+      <xs:field xpath="mstns:Код_x0020_продукта" />
+    </xs:unique>
+    <xs:unique name="LISTWORKER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LISTWORKER" />
+      <xs:field xpath="mstns:код_x0020_сотрудника" />
+    </xs:unique>
+    <xs:unique name="NumberOfItemsSold_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:NumberOfItemsSold" />
+      <xs:field xpath="mstns:НОМЕР_x0020_ПРОДУКТА" />
+    </xs:unique>
+    <xs:unique name="ProductsOneCategory_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ProductsOneCategory" />
+      <xs:field xpath="mstns:НОМЕР_x0020_ПРОДУКТА" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,5 @@
+E:\univer\дз\бд\tr\CLRFunction1\CLRFunction1\bin\Debug\CLRFunction1.dll
+E:\univer\дз\бд\tr\CLRFunction1\CLRFunction1\bin\Debug\CLRFunction1.pdb
+E:\univer\дз\бд\tr\CLRFunction1\CLRFunction1\obj\Debug\CLRFunction1.csproj.CoreCompileInputs.cache
+E:\univer\дз\бд\tr\CLRFunction1\CLRFunction1\obj\Debug\CLRFunction1.dll
+E:\univer\дз\бд\tr\CLRFunction1\CLRFunction1\obj\Debug\CLRFunction1.pdb

@@ -1,0 +1,17 @@
+E:\univer\дз\бд\tr\TRBD\TRBD\bin\Debug\TRBD.exe.config
+E:\univer\дз\бд\tr\TRBD\TRBD\bin\Debug\TRBD.exe
+E:\univer\дз\бд\tr\TRBD\TRBD\bin\Debug\TRBD.pdb
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.csprojAssemblyReference.cache
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.Form1.resources
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.Properties.Resources.resources
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.csproj.GenerateResource.cache
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.csproj.CoreCompileInputs.cache
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.exe
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.pdb
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.FormWorcerAutification.resources
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.FormAdministrator.resources
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.FormCategory.resources
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.FormCustomer.resources
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.FormProduct.resources
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.FormWorker.resources
+E:\univer\дз\бд\tr\TRBD\TRBD\obj\Debug\TRBD.FormOrders.resources
